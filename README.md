@@ -12,9 +12,20 @@ Upon downloading and running this file, the TCCT is now installed locally to you
 
 ## Authorizing Your Account
 
-With the TCCT installed, open the application on your system.
+With the TCCT installed, open the application on your system. Once open, you will be on the main menu. From here, click on the `Menu` button in the top left of the application window.
 
-Once open, you will be on the main menu. From here, click on the `Menu` button in the top left of the application window and press `Configuration`. This window will have a section with a text input and two buttons. First, click on `Get Auth Code`. If you are logged into your Lucid account AND you have a Lucid Premium account, this should redirect you to a screen in your browser that provides a code for you to copy. Copy this code and return to the TCCT.
+![](https://github.com/CXone-ES/TCCT-Releases/blob/documentation/Media/Images/TCCT-Menu.png)
+
+Once the `Menu` dropdown is open, click on `Configuration`.
+
+![](https://github.com/CXone-ES/TCCT-Releases/blob/documentation/Media/Images/TCCT-Menu-Configuration.png)
+
+This window will have a section with a text input and two buttons. First, click on `Get Auth Code`. If you are logged into your Lucid account AND you have a Lucid Premium account, this should redirect you to a screen in your browser that provides a code for you to copy. Copy this code and return to the TCCT.
+
+
+(The one below is redacted for security purposes.)
+
+![](https://github.com/CXone-ES/TCCT-Releases/blob/documentation/Media/Images/Lucid-Authorization-Redirect.png)
 
 Paste the code into the `Auth Code` input and press the `Submit Auth Code` button. This should authorize your account and allow you to start generating test cases with the tool!
 
@@ -22,5 +33,8 @@ Paste the code into the `Auth Code` input and press the `Submit Auth Code` butto
 
 The TCCT has a variety of features to be aware of that can make your life a bit easier.
 
-- 
+- Not sure if this is the right document? Enter the Lucid URL or Lucid document ID and press `Open Browser` to load the document directly in your browser.
+- Need to get the JSON data of your chart? Enter the Lucid URL or document ID and press `Download JSON` to download the JSON to your system.
+- Need to generate test cases for a chart you've run before? Open the sidebar, find the chart and press `Use` to get the document ID pasted directly into the task bar to use!
+- Having some issues and not sure why? Check out the `Log Messages` section on the main menu to see details of what is going on behind the scenes.
 
