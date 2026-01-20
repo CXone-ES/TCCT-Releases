@@ -10,24 +10,7 @@ Once you've found the latest release, download the file ending labelled `Test.Ca
 
 Upon downloading and running this file, the TCCT is now installed locally to your system and will not need to be downloaded again. Updates are automatically pushed to the application so you don't need to do these steps for each release.
 
-## Authorizing Your Account
-
-With the TCCT installed, open the application on your system. Once open, you will be on the main menu. From here, click on the `Menu` button in the top left of the application window.
-
-![](https://github.com/CXone-ES/TCCT-Releases/blob/documentation/Media/Images/TCCT-Menu.png)
-
-Once the `Menu` dropdown is open, click on `Configuration`.
-
-![](https://github.com/CXone-ES/TCCT-Releases/blob/documentation/Media/Images/TCCT-Menu-Configuration.png)
-
-This window will have a section with a text input and two buttons. First, click on `Get Auth Code`. If you are logged into your Lucid account AND you have a Lucid Premium account, this should redirect you to a screen in your browser that provides a code for you to copy. Copy this code and return to the TCCT.
-
-
-(The one below is redacted for security purposes.)
-
-![](https://github.com/CXone-ES/TCCT-Releases/blob/documentation/Media/Images/Lucid-Authorization-Redirect.png)
-
-Paste the code into the `Auth Code` input and press the `Submit Auth Code` button. This should authorize your account and allow you to start generating test cases with the tool!
+To use the Test Case Creation Tool, you must go through the authorization process within the tool. [Instructions for authorizing your Test Case Creation tool can be found in `AUTHORIZATION.md`](./blob/main/AUTHORIZATION.md).
 
 ## Basic usage
 
