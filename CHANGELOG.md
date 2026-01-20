@@ -5,6 +5,7 @@
 | [`1.1.0`](#v110) | Base Release |
 | [`1.2.0`](#v120) | UI Overhaul + Sidebar |
 | [`1.2.3`](#v123) | Variable tracking & Assignment printing |
+| [`1.3.0`](#v130) | Feedback Reporting + Help |
 
 # v1.1.0
 
@@ -52,7 +53,7 @@ This release is in preparation for rollout to as many users as possible. Quality
 - UI updated to be inline with NiCE and ES Tool.
 - Each test case path now contains an independent variable tracker.
 
-# v1.2.4
+# v1.3.0
 
 Several small adjustments were made including changing the "Configuration" menu to "Settings", updating the Warning modal, and adjusting some logging logic.
 
