@@ -10,7 +10,7 @@ Once you've found the latest release, download the file ending labelled `Test.Ca
 
 Upon downloading and running this file, the TCCT is now installed locally to your system and will not need to be downloaded again. Updates are automatically pushed to the application so you don't need to do these steps for each release.
 
-To use the Test Case Creation Tool, you must go through the authorization process within the tool. [Instructions for authorizing your Test Case Creation tool can be found in `AUTHORIZATION.md`](./blob/main/AUTHORIZATION.md).
+To use the Test Case Creation Tool, you must go through the authorization process within the tool. [Instructions for authorizing your Test Case Creation tool can be found in `AUTHORIZATION.md`](./AUTHORIZATION.md).
 
 ## Basic usage
 
