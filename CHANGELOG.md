@@ -51,3 +51,24 @@ This release is in preparation for rollout to as many users as possible. Quality
 - UI issue with the sidebar icons resolved.
 - UI updated to be inline with NiCE and ES Tool.
 - Each test case path now contains an independent variable tracker.
+
+# v1.2.4
+
+Several small adjustments were made including changing the "Configuration" menu to "Settings", updating the Warning modal, and adjusting some logging logic.
+
+## Added ✅
+
+- Documentation for authorizing the Test Case Creation Tool was uploaded.
+- A new menu option was created: The `Help` tab.
+  - A feedback reporting system was created and can be accessed under the `Help` tab. It is labelled `Report Feedback`.
+  - A direct link to the most recent changes has been added under the `Help` tab. It is labelled `Recent Changes`.
+
+## Changed ✏️
+
+- Log verbiage was updated to be more concise.
+- The drop down menus within the `Settings` page are now animated.
+
+## Removed ❌
+
+- Log timestamps no longer show down to the millisecond.
+- The internal logger no longer times startup times since they are inconsistent between cold starts and repeated use.
