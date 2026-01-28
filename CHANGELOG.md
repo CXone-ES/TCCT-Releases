@@ -6,6 +6,7 @@
 | [`1.2.0`](#v120) | UI Overhaul + Sidebar |
 | [`1.2.3`](#v123) | Variable tracking & Assignment printing |
 | [`1.3.0`](#v130) | Feedback Reporting + Help |
+| [`1.3.1`](#v131) | Invalid Shape Patch + Only Dark Mode |
 
 # v1.1.0
 
@@ -73,3 +74,12 @@ Several small adjustments were made including changing the "Configuration" menu 
 
 - Log timestamps no longer show down to the millisecond.
 - The internal logger no longer times startup times since they are inconsistent between cold starts and repeated use.
+
+# v1.3.1
+
+This patch resolves an issue that floods the log with invalid shape errors instead of using the Warning and Error modal.
+
+## Changed ✏️
+
+- Invalid shape warnings moved from log into warning modal.
+- Styling stays in dark mode.
