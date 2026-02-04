@@ -1,10 +1,10 @@
 # Using the Test Case Creation Tool
 
-The Test Case Creation Tool, or the TCCT, is an internal tool at NiCE used to generate test cases from Lucid Chart call flow diagrams. Using this tool requires a Lucid Premium account to integrate with the Lucid API. Below are instructions on how to get the TCCT up and running on your system.
+The Test Case Creation Tool, or TCCT, is an internal tool at NiCE used to generate test cases from Lucid Chart call flow diagrams. Using this tool requires a Lucid Premium account to integrate with the Lucid API. Below are instructions on how to get the TCCT up and running on your system.
 
 ## How To Download The TCCT
 
-Releases come out as new features are added, bugs are squashed, or as needed in other cases. To find the latest release, click [here](https://github.com/CXone-ES/TCCT-Releases/releases/latest)!
+Releases come out as new features are added, bugs are squashed, or as needed in other cases. [To find the latest release of the Test Case Creation Tool, click here](https://github.com/CXone-ES/TCCT-Releases/releases/latest)!
 
 Once you've found the latest release, download the file ending labelled `Test.Case.Creation.Tool-[version].Setup.exe` where version is the numeric release number, such as `1.0.0`.
 
@@ -20,4 +20,6 @@ The TCCT has a variety of features to be aware of that can make your life a bit 
 - Need to get the JSON data of your chart? Enter the Lucid URL or document ID and press `Download JSON` to download the JSON to your system.
 - Need to generate test cases for a chart you've run before? Open the sidebar, find the chart and press `Use` to get the document ID pasted directly into the task bar to use!
 - Having some issues and not sure why? Check out the `Log Messages` section on the main menu to see details of what is going on behind the scenes.
+
+
 
