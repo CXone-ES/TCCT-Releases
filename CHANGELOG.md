@@ -7,6 +7,7 @@
 | [`1.2.3`](#v123) | Variable tracking & Assignment printing |
 | [`1.3.0`](#v130) | Feedback Reporting + Help |
 | [`1.3.1`](#v131) | Invalid Shape Patch + Only Dark Mode |
+| [`1.4.0`](#v140) | New Export Option + Ignore Fix |
 
 # v1.1.0
 
@@ -83,3 +84,12 @@ This patch resolves an issue that floods the log with invalid shape errors inste
 
 - Invalid shape warnings moved from log into warning modal.
 - Styling stays in dark mode.
+
+# v1.4.0
+
+Added export issues button
+Fixed ignore issues. Now all items should be acknowledged.
+
+## Added ✅
+
+
