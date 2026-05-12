@@ -8,6 +8,7 @@
 | [`1.3.0`](#v130) | Feedback Reporting + Help |
 | [`1.3.1`](#v131) | Invalid Shape Patch + Only Dark Mode |
 | [`1.4.0`](#v140) | New Export Option + Ignore Fix |
+| [`2.0.0`](#v200) | Expanded Action Support + Smarter Generation |
 
 # v1.1.0
 
@@ -92,4 +93,28 @@ Fixed ignore issues. Now all items should be acknowledged.
 
 ## Added ✅
 
+- Warnings and errors from the pop-up window can now be exported to an `.XLSX` file.
 
+## Changed ✏️
+
+- Some underlying processes had discrepancies regarding items labelled on the 'ignore' layer. Changes to this now make it so that those items are properly ignored more consistently.
+
+# v2.0.0
+
+A major update focused on significantly expanding chart support and improving output quality. Many previously unrecognized action types are now fully handled, and test case generation is smarter and more accurate across the board.
+
+## Added ✅
+
+- Many additional action types are now fully supported, including Menu, Hours, Email, If/Loop,
+  RunScript, Music, Blind Transfer, Message, Play, Return, and several others. These previously
+  appeared as unidentified actions in output.
+- Test case strings are now generated for Menu and Hours actions.
+- Wrike output is now complete.
+- A secondary validation pass has been added. More issues will now be surfaced in the warning
+  and error modal that were previously missed.
+
+## Changed ✏️
+
+- Path generation is now smarter. The tool no longer generates redundant paths for both branches
+  of a condition when sufficient data exists to determine the correct one. Users will see fewer
+  duplicate test cases in their output.
