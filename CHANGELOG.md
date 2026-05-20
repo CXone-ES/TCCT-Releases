@@ -9,6 +9,7 @@
 | [`1.3.1`](#v131) | Invalid Shape Patch + Only Dark Mode |
 | [`1.4.0`](#v140) | New Export Option + Ignore Fix |
 | [`2.0.0`](#v200) | Expanded Action Support + Smarter Generation |
+| [`2.1.0`](#v210) | Digital Action Support |
 
 # v1.1.0
 
@@ -118,3 +119,7 @@ A major update focused on significantly expanding chart support and improving ou
 - Path generation is now smarter. The tool no longer generates redundant paths for both branches
   of a condition when sufficient data exists to determine the correct one. Users will see fewer
   duplicate test cases in their output.
+
+# v2.1.0
+
+Digital integration has been the biggest pushing point since the start of this version of the tool. With that said, six Digital actions have been added to the TCCT's internal system so that more functionality can be used for Digital scripts.
