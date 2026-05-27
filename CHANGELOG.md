@@ -9,7 +9,7 @@
 | [`1.3.1`](#v131) | Invalid Shape Patch + Only Dark Mode |
 | [`1.4.0`](#v140) | New Export Option + Ignore Fix |
 | [`2.0.0`](#v200) | Expanded Action Support + Smarter Generation |
-| [`2.1.0`](#v210) | Digital Action Support |
+| [`2.1.0`](#v210) | Digital Support + Spread By PoC Setting |
 
 # v1.1.0
 
@@ -122,4 +122,32 @@ A major update focused on significantly expanding chart support and improving ou
 
 # v2.1.0
 
-Digital integration has been the biggest pushing point since the start of this version of the tool. With that said, six Digital actions have been added to the TCCT's internal system so that more functionality can be used for Digital scripts.
+This release brings significant UX improvements to authorization, expanded test case generation capabilities, and quality-of-life additions to the export and feedback flows.
+
+## Added ✅
+- **Spread Test Cases by PoC** — A new Generation Setting lets you split the exported Excel file
+  into separate worksheets, one per Point of Contact, instead of a single combined sheet. Tests
+  with no assigned PoC land on an "Unknown" sheet. Sheet names are automatically truncated to
+  Excel's 31-character limit.
+- **Digital Action Support** — Test case generation now covers digital contact routing rules,
+  producing correct test case strings for digital flows alongside existing voice flows.
+- **Name & Email in Feedback** — The Submit Feedback form now collects your name and email
+  address so the team can follow up on issues you report.
+
+## Changed ✏️
+- **Authorization Required on Startup** — The app now checks authorization status at launch. If
+  you haven't authorized with Lucid, you're directed to Settings and cannot navigate to the main
+  menu until authorization is complete.
+- **Auth Submission Feedback** — The Submit Auth Code button now shows "Submitting…" while
+  processing, then displays a clear green success or red error message. The input and button
+  disable during submission to prevent accidental double-submits.
+- **Persistent Auth Banner** — An amber banner appears at the top of the Settings page while
+  you're unauthorized, reminding you to complete Lucid authorization.
+- **Auth Status Auto-Refresh** — After a successful authorization, the User Authorization status
+  updates immediately without requiring a page re-open.
+- **Generation Settings Save Confirmation** — After saving Generation Settings, a brief green
+  "Settings saved!" confirmation appears inline.
+
+## Maintenance 🛠️
+- Log backups are now automatically pruned on startup: files older than 30 days are removed and
+  no more than 5 backup files are retained at any time.
