@@ -10,6 +10,7 @@
 | [`1.4.0`](#v140) | New Export Option + Ignore Fix |
 | [`2.0.0`](#v200) | Expanded Action Support + Smarter Generation |
 | [`2.1.0`](#v210) | Digital Support + Spread By PoC Setting |
+| [`2.2.0`](#v220) | Go To Added + Improved Errors |
 
 # v1.1.0
 
@@ -151,3 +152,34 @@ This release brings significant UX improvements to authorization, expanded test 
 ## Maintenance 🛠️
 - Log backups are now automatically pruned on startup: files older than 30 days are removed and
   no more than 5 backup files are retained at any time.
+
+# v2.2.0
+
+This update improves upon error messaging, handles an implementation error for pop-up windows, and adds functionality for the `Go To` shape in the shape library.
+
+## Added ✅
+- **Jump across a page with "Go To" shapes.** You can now use same-page bridge
+  shapes — a `Go To [x]` shape paired with a matching `[x]` shape — to continue
+  flow across a page without drawing a connector line. Generation follows the
+  `[x]` shape's outgoing path automatically.
+
+## Changed ✏️
+- **Clearer messaging when prompt verbiage is missing.** Play and Menu actions
+  with no verbiage now show "No verbiage provided" instead of failing quietly.
+- **More helpful error messages.**
+  - When a Menu or Ask Caller shape has no branching variable configured, the
+    error now names the specific shape and page.
+  - When a Run Script / Run SubScript can't find its target page's "Begin", the
+    message now names the page it was trying to reach.
+- **Alerts window behaves correctly.** It's now a true modal and no longer hides
+  the main window behind it.
+- **Run SubScript steps are now recognized.** Fixed a casing mismatch that could
+  cause "Run SubScript" actions to be silently skipped.
+- **Variable-based page names resolve correctly.** Page names built from
+  variables (e.g. `{PV2}_HOOPS`) now resolve to the full page name when running
+  to a script or subscript.
+- **Returning from a subscript resumes correctly** at the calling shape.
+- **Prompt filenames ending in `.wav`** no longer cause verbiage text to be
+  split incorrectly.
+- **Test case note formatting** cleaned up (notes are no longer wrapped in
+  parentheses).
